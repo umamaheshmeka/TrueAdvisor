@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<title>3D Model AR</title>
+	<meta charset="UTF-8" />
+
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+</head>
+
+<body class="w-100 sans-serif bg-white"> 
+<!-- Use it like any other HTML element -->
+<model-viewer src="https://cdn.glitch.com/502844fd-fadb-42c4-acfa-47881f4dca0f%2FHeart1.glb?v=1628061670394"
+              alt="A 3D model of an astronaut" auto-rotate camera-controls background-color="#ffffff"
+              ar magic-leap unstable-webxr
+              ios-src="https://github.com/Giorat/dope-chair-model-viewer/raw/master/model/chair.usdz">
+</model-viewer>
+
+<article class="w-100 pa3 pa5-ns">
+  <h1 class="f-headline lh-solid">DOPEE CHAIR</h1>
+  <p class="measure lh-copy">
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+    no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  </p>
+	<a href="#0" class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 mt4 ba border-box" onClick={alert("Bought!")} >
+    <span class="pr1">Buy this COOL DOPE CHAIR</span>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>chevronRight icon</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+</article>
+<model-viewer src="https://cdn.glitch.com/502844fd-fadb-42c4-acfa-47881f4dca0f%2FHeart1.glb?v=1628061670394"
+              alt="A 3D model of an astronaut" auto-rotate camera-controls background-color="#ffffff"
+              ar magic-leap unstable-webxr
+              ios-src="https://github.com/Giorat/dope-chair-model-viewer/raw/master/model/chair.usdz">
+</model-viewer>
+
+<style>
+body{
+	  overflow:hidden;
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+article.pa3.pa5-ns {
+    position: absolute;
+}
+
+model-viewer{
+	position: absolute;
+	width:100vw;
+	height:100vh;
+	margin: 0 auto;
+}
+</style>
+
+</body>
+
+</html>

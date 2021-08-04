@@ -1,9 +1,10 @@
 {
-    "name": "Any Scrapper",
+    "name": "True Adviser",
     "version": "1.0",
     "description": "Scrap any website",
     "permissions": ["downloads","activeTab","declarativeContent","storage"],
     "options_page": "options.html",
+    "content_security_policy": "script-src 'self' https://unpkg.com/@google/model-viewer/dist/model-viewer.js; object-src 'self'",
     "background": {
         "scripts": ["background.js"],
         "persistent": false
@@ -11,17 +12,13 @@
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/web-crawler16.png",
-            "32": "images/web-crawler32.png",
-            "48": "images/web-crawler48.png",
-            "128": "images/web-crawler128.png"
+            "192": "images/man.png"
+
           }
     },
     "icons": {
-        "16": "images/web-crawler16.png",
-        "32": "images/web-crawler32.png",
-        "48": "images/web-crawler48.png",
-        "128": "images/web-crawler128.png"
+        "192": "images/man.png"
+
       },
     "manifest_version": 2
   }

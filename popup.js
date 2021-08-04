@@ -50,6 +50,23 @@ chrome.tabs.query({
       })
       //Images
       imageRender(product_data.images)
+
+      //Button
+      this.button_ = document.getElementById('button');
+      this.button_.addEventListener('click', function(){
+        chrome.tabs.create({url: chrome.extension.getURL('heart3D.html')});
+        // location.href ="https://www.google.com"
+        // chrome.runtime.open("https://www.google.com")
+        // chrome.runtime.sendMessage({
+        //       from: 'popup', subject: 'postStuff', message: "Got it, researching"
+        //     },
+        //     function () {
+        //       alert('file:///Users/umeka/Downloads/heart3D.html');
+        //       // getInfo(response);
+        //     }
+        // );
+
+      });
     });
     
     function imageRender(srcArray){
