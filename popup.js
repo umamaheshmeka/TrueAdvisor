@@ -53,8 +53,28 @@ chrome.tabs.query({
 
       //Button
       this.button_ = document.getElementById('button');
-      this.button_.addEventListener('click', function(){
-        chrome.tabs.create({url: chrome.extension.getURL('heart3D.html')});
+      const score_card = document.getElementById('scorecarddiv')
+      this.button_.onclick = function (){
+        if (score_card.style.display !== "none") {
+          score_card.style.display = "none";
+        } else {
+          score_card.style.display = "block";
+        }
+      }
+      // this.button_.addEventListener('click', function(){
+      //   if(score_card.style.display !== "none"){
+      //     score_card.style.display == "none"
+      //   }else {
+      //     score_card.style.display = "block"
+      //   }
+
+        //score_card.style.display = "none"
+        // if(score_card.style.display !== "block"){
+        //   score_card.style.display = "block"
+        // } else {
+        //   score_card.style.display = "none"
+        // }
+        //chrome.tabs.create({url: chrome.extension.getURL('heart3D.html')});
         // location.href ="https://www.google.com"
         // chrome.runtime.open("https://www.google.com")
         // chrome.runtime.sendMessage({
@@ -66,7 +86,7 @@ chrome.tabs.query({
         //     }
         // );
 
-      });
+     // });
     });
     
     function imageRender(srcArray){
